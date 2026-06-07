@@ -1,167 +1,98 @@
-# Cat Breed Classification Using CNN Transfer Learning
+# Cat Breed Classification with CNN Transfer Learning
 
-Course: ISB46703 Principle of Artificial Intelligence  
-Assessment: Project, 20%
+This repository contains an AI image classification project for the **Principle of Artificial Intelligence** course.
 
-## Project Overview
+The project focuses on **animal subspecies classification** by training CNN transfer learning models to classify five cat breeds from the Oxford-IIIT Pet Dataset.
 
-This project classifies cat breeds using transfer learning with convolutional neural networks. The selected assessment domain is **Animal subspecies**, represented by visually similar domestic cat breeds.
+## Overview
 
-The project compares three convolutional neural network models:
+Cat breed classification can be challenging because some breeds have visually similar features. This project compares three CNN architectures to identify which model performs best for this classification task:
 
 - ResNet50
 - DenseNet121
-- MobileNetV3
+- MobileNetV3Small
 
-The models will be trained using transfer learning for 50 epochs each. Their performance will be compared using accuracy, mean average precision, training time, model size/parameters, loss and accuracy curves, and confusion matrices.
+The models are compared using:
 
-## Selected Dataset
+- Accuracy
+- Mean average precision, mAP
+- Training time
+- Number of parameters
+- Accuracy and loss graphs
+- Confusion matrices
 
-Dataset source: Oxford-IIIT Pet Dataset  
-Official dataset page: https://www.robots.ox.ac.uk/~vgg/data/pets/
+## Dataset
 
-The original dataset contains 37 pet breed categories. This project will use a focused subset of 5 cat breeds so the task remains manageable and fits the assessment requirement of 3 to 10 classes.
+Dataset: Oxford-IIIT Pet Dataset  
+Source: https://www.robots.ox.ac.uk/~vgg/data/pets/
 
-Selected classes:
+Selected cat breed classes:
 
-- Abyssinian
-- Bengal
-- Birman
-- Bombay
-- British Shorthair
+1. Abyssinian
+2. Bengal
+3. Birman
+4. Bombay
+5. British Shorthair
 
-These classes are suitable because they are all animal breed/subspecies categories and have enough images for transfer learning experiments.
+The notebook downloads the dataset automatically, filters the selected cat breeds, and creates training, validation, and testing splits.
 
-## Assessment Requirements
-
-The project must include:
-
-- Selected domain: Animal subspecies.
-- At least 3 image classes, up to 10 classes.
-- Training, validation, and testing dataset splits.
-- Three CNN models trained for 50 epochs each.
-- Evaluation using accuracy and mAP.
-- Training time recorded for each model.
-- Graphs for model loss and accuracy.
-- Confusion matrix for each model.
-- Final comparison and conclusion.
-
-## Suggested Folder Structure
+## Repository Contents
 
 ```text
-dataset/
-  train/
-    Abyssinian/
-    Bengal/
-    Birman/
-    Bombay/
-    British_Shorthair/
-  validation/
-    Abyssinian/
-    Bengal/
-    Birman/
-    Bombay/
-    British_Shorthair/
-  test/
-    Abyssinian/
-    Bengal/
-    Birman/
-    Bombay/
-    British_Shorthair/
-
 notebooks/
-  01_data_preparation.ipynb
-  02_resnet50_training.ipynb
-  03_densenet121_training.ipynb
-  04_mobilenetv3_training.ipynb
   00_full_cat_breed_project_colab.ipynb
 
 results/
-  graphs/
-  confusion_matrices/
+  README.md
 
-models/
-docs/
+README.md
 ```
 
-## Current Notebooks
+## Main Notebook
 
-These notebooks are designed to run in Google Colab.
+Open the full project notebook in Google Colab:
 
-Before training the CNN models in Colab, use:
+[Open in Colab](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/00_full_cat_breed_project_colab.ipynb)
+
+Before running the notebook, enable GPU:
 
 ```text
 Runtime > Change runtime type > Hardware accelerator > GPU
 ```
 
-Recommended option:
+The notebook includes:
 
-| Notebook | Open In Colab | Purpose | Status |
-|---|---|---|---|
-| `notebooks/00_full_cat_breed_project_colab.ipynb` | [Open](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/00_full_cat_breed_project_colab.ipynb) | Complete project in one Colab notebook: data preparation, all three model trainings, evaluation, comparison, and conclusion | Ready |
+1. Dataset download
+2. Dataset filtering for five cat breeds
+3. Train, validation, and test split creation
+4. Dataset visualization
+5. ResNet50 training and evaluation
+6. DenseNet121 training and evaluation
+7. MobileNetV3Small training and evaluation
+8. Model comparison table
+9. Final conclusion draft
 
-Separate backup notebooks:
+## Expected Results Files
 
-| Notebook | Open In Colab | Purpose | Status |
-|---|---|---|---|
-| `notebooks/01_data_preparation.ipynb` | [Open](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/01_data_preparation.ipynb) | Download/filter the Oxford-IIIT Pet Dataset, create train/validation/test splits, and visualize the selected cat breeds | Ready |
-| `notebooks/02_resnet50_training.ipynb` | [Open](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/02_resnet50_training.ipynb) | Train and evaluate ResNet50 | Ready |
-| `notebooks/03_densenet121_training.ipynb` | [Open](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/03_densenet121_training.ipynb) | Train and evaluate DenseNet121 | Ready |
-| `notebooks/04_mobilenetv3_training.ipynb` | [Open](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/04_mobilenetv3_training.ipynb) | Train and evaluate MobileNetV3 | Ready |
-| `notebooks/05_model_comparison.ipynb` | Not needed if using the full notebook | Compare all model results and write final conclusion | Covered in full notebook |
+After running the notebook, the `results` folder should contain:
 
-See [docs/colab_guide.md](docs/colab_guide.md) for step-by-step Colab instructions.
+- `model_comparison.csv`
+- `final_conclusion.txt`
+- accuracy and loss graphs
+- confusion matrices
+- classification reports
 
-## After Running The Full Colab Notebook
+## Model Performance Comparison
 
-After `00_full_cat_breed_project_colab.ipynb` finishes, download or save these output files:
+| Model | Accuracy | mAP | Training Time | Parameters |
+|---|---:|---:|---:|---:|
+| ResNet50 | TBD | TBD | TBD | TBD |
+| DenseNet121 | TBD | TBD | TBD | TBD |
+| MobileNetV3Small | TBD | TBD | TBD | TBD |
 
-- `results/model_comparison.csv`
-- `results/final_conclusion.txt`
-- `results/graphs/class_distribution.png`
-- `results/graphs/model_comparison.png`
-- `results/graphs/resnet50_accuracy.png`
-- `results/graphs/densenet121_accuracy.png`
-- `results/graphs/mobilenetv3_accuracy.png`
-- `results/confusion_matrices/resnet50_confusion_matrix.png`
-- `results/confusion_matrices/densenet121_confusion_matrix.png`
-- `results/confusion_matrices/mobilenetv3_confusion_matrix.png`
+The final values will be filled in after running the Colab notebook.
 
-Use these outputs to update the model comparison table below and prepare the 5-minute presentation.
+## Project By
 
-## Team Roles
+Add group member names here.
 
-| Role | Responsibility |
-|---|---|
-| Data Engineer | Collect images, standardize data, create dataset splits |
-| Data Scientist | Build CNN models, train models, tune hyperparameters |
-| Data Analyst | Visualize dataset, evaluate models, compare results |
-
-## Model Comparison Table
-
-| Model | Test Accuracy | mAP | Training Time | Parameters | Notes |
-|---|---:|---:|---:|---:|---|
-| ResNet50 | TBD | TBD | TBD | TBD | TBD |
-| DenseNet121 | TBD | TBD | TBD | TBD | TBD |
-| MobileNetV3 | TBD | TBD | TBD | TBD | TBD |
-
-## Final Conclusion
-
-After running the notebook, the final conclusion should choose the best model for the classification task by considering:
-
-- Accuracy
-- mAP
-- Training time
-- Number of parameters
-- Confusion matrix performance
-- Overall suitability for the selected dataset
-
-## Presentation Focus
-
-The 5-minute presentation should explain:
-
-1. Why cat breed classification fits the Animal subspecies domain.
-2. How the dataset was prepared and split.
-3. How transfer learning was used with ResNet50, DenseNet121, and MobileNetV3.
-4. The accuracy, mAP, training time, and confusion matrix results.
-5. Which model is the best choice and why.

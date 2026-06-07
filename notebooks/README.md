@@ -1,28 +1,18 @@
 # Notebooks
 
-Suggested notebooks:
+This folder contains the main Google Colab notebook for the project.
 
-1. `01_data_preparation.ipynb`
-2. `02_resnet50_training.ipynb`
-3. `03_densenet121_training.ipynb`
-4. `04_mobilenetv3_training.ipynb`
-5. `05_model_comparison.ipynb`
+## Main Notebook
 
-These notebooks are designed to run in Google Colab. Use GPU runtime for the model training notebooks.
+- `00_full_cat_breed_project_colab.ipynb`
 
 Open in Colab:
 
-- [00 Full Cat Breed Project Colab Notebook](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/00_full_cat_breed_project_colab.ipynb)
-- [01 Data Preparation](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/01_data_preparation.ipynb)
-- [02 ResNet50 Training](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/02_resnet50_training.ipynb)
-- [03 DenseNet121 Training](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/03_densenet121_training.ipynb)
-- [04 MobileNetV3 Training](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/04_mobilenetv3_training.ipynb)
+https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/00_full_cat_breed_project_colab.ipynb
 
-Notebook purpose:
+Use GPU runtime before training:
 
-- `00_full_cat_breed_project_colab.ipynb`: complete project in one Colab runtime, from dataset preparation to final model comparison.
-- `01_data_preparation.ipynb`: download/access dataset, filter cat breeds, split folders, visualize class counts.
-- `02_resnet50_training.ipynb`: train and evaluate ResNet50.
-- `03_densenet121_training.ipynb`: train and evaluate DenseNet121.
-- `04_mobilenetv3_training.ipynb`: train and evaluate MobileNetV3.
-- `05_model_comparison.ipynb`: compare accuracy, mAP, parameters, training time, loss/accuracy graphs, and confusion matrices.
+```text
+Runtime > Change runtime type > Hardware accelerator > GPU
+```
+
