@@ -71,6 +71,7 @@ The notebook includes:
 7. MobileNetV3Small training and evaluation
 8. Model comparison table
 9. Final conclusion draft
+10. Graph results preview for GitHub
 
 ## Expected Results Files
 
@@ -92,7 +93,22 @@ After running the notebook, the `results` folder should contain:
 
 The final values will be filled in after running the Colab notebook.
 
+## Showing Graphs On GitHub
+
+To make the notebook preview show graphs on GitHub:
+
+1. Open the notebook in Google Colab.
+2. Enable GPU runtime.
+3. Run the notebook from top to bottom.
+4. Make sure the final section, **Graph Results Preview For GitHub**, displays the graphs.
+5. In Colab, save the executed notebook back to GitHub:
+
+```text
+File > Save a copy in GitHub
+```
+
+After the saved notebook is pushed to GitHub, the notebook preview will show the graph outputs, confusion matrices, and comparison table.
+
 ## Project By
 
 Add group member names here.
-
