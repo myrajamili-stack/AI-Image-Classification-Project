@@ -86,13 +86,23 @@ docs/
 
 ## Current Notebooks
 
-| Notebook | Purpose | Status |
-|---|---|---|
-| `notebooks/01_data_preparation.ipynb` | Download/filter the Oxford-IIIT Pet Dataset, create train/validation/test splits, and visualize the selected cat breeds | Ready |
-| `notebooks/02_resnet50_training.ipynb` | Train and evaluate ResNet50 | Ready |
-| `notebooks/03_densenet121_training.ipynb` | Train and evaluate DenseNet121 | Ready |
-| `notebooks/04_mobilenetv3_training.ipynb` | Train and evaluate MobileNetV3 | Ready |
-| `notebooks/05_model_comparison.ipynb` | Compare all model results and write final conclusion | To do |
+These notebooks are designed to run in Google Colab.
+
+Before training the CNN models in Colab, use:
+
+```text
+Runtime > Change runtime type > Hardware accelerator > GPU
+```
+
+| Notebook | Open In Colab | Purpose | Status |
+|---|---|---|---|
+| `notebooks/01_data_preparation.ipynb` | [Open](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/01_data_preparation.ipynb) | Download/filter the Oxford-IIIT Pet Dataset, create train/validation/test splits, and visualize the selected cat breeds | Ready |
+| `notebooks/02_resnet50_training.ipynb` | [Open](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/02_resnet50_training.ipynb) | Train and evaluate ResNet50 | Ready |
+| `notebooks/03_densenet121_training.ipynb` | [Open](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/03_densenet121_training.ipynb) | Train and evaluate DenseNet121 | Ready |
+| `notebooks/04_mobilenetv3_training.ipynb` | [Open](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/04_mobilenetv3_training.ipynb) | Train and evaluate MobileNetV3 | Ready |
+| `notebooks/05_model_comparison.ipynb` | To be added | Compare all model results and write final conclusion | To do |
+
+See [docs/colab_guide.md](docs/colab_guide.md) for step-by-step Colab instructions.
 
 ## Team Roles
 

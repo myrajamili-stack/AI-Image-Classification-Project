@@ -8,7 +8,14 @@ Suggested notebooks:
 4. `04_mobilenetv3_training.ipynb`
 5. `05_model_comparison.ipynb`
 
-These notebooks can be created in Google Colab and uploaded here.
+These notebooks are designed to run in Google Colab. Use GPU runtime for the model training notebooks.
+
+Open in Colab:
+
+- [01 Data Preparation](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/01_data_preparation.ipynb)
+- [02 ResNet50 Training](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/02_resnet50_training.ipynb)
+- [03 DenseNet121 Training](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/03_densenet121_training.ipynb)
+- [04 MobileNetV3 Training](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/04_mobilenetv3_training.ipynb)
 
 Notebook purpose:
 
