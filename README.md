@@ -36,11 +36,18 @@ Examines the evolution of training and validation accuracy. Analyzes training an
 
 ## Performance Metrics
 
-The final performance metrics will be updated after running the notebook in Google Colab.
+The performance metrics are generated in the notebook after training the three models.
 
-ResNet50: Accuracy - TBD, mAP - TBD, Training Time - TBD.  
-DenseNet121: Accuracy - TBD, mAP - TBD, Training Time - TBD.  
-MobileNetV3Small: Accuracy - TBD, mAP - TBD, Training Time - TBD.
+The results include:
+
+- ResNet50 accuracy, mAP, and training time
+- DenseNet121 accuracy, mAP, and training time
+- MobileNetV3Small accuracy, mAP, and training time
+- Model comparison table
+- Confusion matrix analysis
+- Training accuracy and loss trends
+
+After running the notebook in Google Colab, the final values will be displayed in the notebook output and saved in `results/model_comparison.csv`.
 
 ## Google Colab Notebook
 
@@ -58,4 +65,3 @@ Runtime > Change runtime type > Hardware accelerator > GPU
 
 Myra Jasmeen Daniella Binti Bakar Jamili  
 Muhammad Bin Iskandar
-
