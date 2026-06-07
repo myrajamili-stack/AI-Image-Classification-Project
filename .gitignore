@@ -1,0 +1,21 @@
+# System files
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Large generated artifacts
+models/*.h5
+models/*.keras
+models/*.tflite
+
+# Optional local dataset storage
+dataset/**/*.jpg
+dataset/**/*.jpeg
+dataset/**/*.png
+dataset/**/*.webp
+
