@@ -34,6 +34,14 @@ The data preparation notebook can run without GPU.
 
 ## 3. Recommended Running Order
 
+Recommended single-notebook option:
+
+1. `00_full_cat_breed_project_colab.ipynb`
+
+This is the safest option because the dataset preparation, model training, evaluation, and comparison happen in the same Colab runtime.
+
+Backup separate-notebook option:
+
 Run the notebooks in this order:
 
 1. `01_data_preparation.ipynb`
@@ -79,4 +87,3 @@ Make sure the repository includes:
 - Model comparison table
 - Final conclusion
 - Dataset link, if dataset is stored outside GitHub
-

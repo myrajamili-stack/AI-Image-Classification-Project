@@ -94,6 +94,14 @@ Before training the CNN models in Colab, use:
 Runtime > Change runtime type > Hardware accelerator > GPU
 ```
 
+Recommended option:
+
+| Notebook | Open In Colab | Purpose | Status |
+|---|---|---|---|
+| `notebooks/00_full_cat_breed_project_colab.ipynb` | [Open](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/00_full_cat_breed_project_colab.ipynb) | Complete project in one Colab notebook: data preparation, all three model trainings, evaluation, comparison, and conclusion | Ready |
+
+Separate backup notebooks:
+
 | Notebook | Open In Colab | Purpose | Status |
 |---|---|---|---|
 | `notebooks/01_data_preparation.ipynb` | [Open](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/01_data_preparation.ipynb) | Download/filter the Oxford-IIIT Pet Dataset, create train/validation/test splits, and visualize the selected cat breeds | Ready |
