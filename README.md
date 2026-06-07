@@ -1,42 +1,56 @@
-# Cat Breed Classification with CNN Transfer Learning
+# Cat Breed Classification
 
-This repository contains an AI image classification project for the **Principle of Artificial Intelligence** course.
+## Project Members
 
-The project focuses on **animal subspecies classification** by training CNN transfer learning models to classify five cat breeds from the Oxford-IIIT Pet Dataset.
+1. Myra Jasmeen Daniella Binti Bakar Jamili
+2. Muhammad Bin Iskandar
 
-## Overview
+## Description
 
-Cat breed classification can be challenging because some breeds have visually similar features. This project compares three CNN architectures to identify which model performs best for this classification task:
+This project is an image classification project for the **Principle of Artificial Intelligence** course. The selected domain is **Animal subspecies**, focusing on cat breed classification using the Oxford-IIIT Pet Dataset.
+
+The project uses Convolutional Neural Network transfer learning to classify five cat breeds:
+
+- Abyssinian
+- Bengal
+- Birman
+- Bombay
+- British Shorthair
+
+Three pretrained CNN models are used and compared:
 
 - ResNet50
 - DenseNet121
 - MobileNetV3Small
 
-The models are compared using:
+The goal is to identify which model performs best based on accuracy, mean average precision, training time, model parameters, loss/accuracy graphs, and confusion matrices.
 
-- Accuracy
-- Mean average precision, mAP
-- Training time
-- Number of parameters
-- Accuracy and loss graphs
-- Confusion matrices
+## Overview
 
-## Dataset
+The complete workflow is included in one Google Colab notebook:
 
-Dataset: Oxford-IIIT Pet Dataset  
-Source: https://www.robots.ox.ac.uk/~vgg/data/pets/
+[Open Notebook in Colab](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/00_full_cat_breed_project_colab.ipynb)
 
-Selected cat breed classes:
+The notebook performs the following steps:
 
-1. Abyssinian
-2. Bengal
-3. Birman
-4. Bombay
-5. British Shorthair
+1. Downloads the Oxford-IIIT Pet Dataset.
+2. Filters the dataset to the selected five cat breeds.
+3. Splits the dataset into training, validation, and testing sets.
+4. Visualizes the dataset distribution and sample cat images.
+5. Trains ResNet50 for 50 epochs.
+6. Trains DenseNet121 for 50 epochs.
+7. Trains MobileNetV3Small for 50 epochs.
+8. Evaluates each model using accuracy and mAP.
+9. Displays accuracy/loss graphs and confusion matrices.
+10. Compares the three models and generates a final conclusion.
 
-The notebook downloads the dataset automatically, filters the selected cat breeds, and creates training, validation, and testing splits.
+Before running the notebook in Colab, enable GPU:
 
-## Repository Contents
+```text
+Runtime > Change runtime type > Hardware accelerator > GPU
+```
+
+## Contents
 
 ```text
 notebooks/
@@ -48,42 +62,21 @@ results/
 README.md
 ```
 
-## Main Notebook
+### notebooks
 
-Open the full project notebook in Google Colab:
+Contains the main all-in-one Google Colab notebook for dataset preparation, model training, evaluation, and result visualization.
 
-[Open in Colab](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/00_full_cat_breed_project_colab.ipynb)
+### results
 
-Before running the notebook, enable GPU:
+Stores output files generated after running the notebook, such as:
 
-```text
-Runtime > Change runtime type > Hardware accelerator > GPU
-```
-
-The notebook includes:
-
-1. Dataset download
-2. Dataset filtering for five cat breeds
-3. Train, validation, and test split creation
-4. Dataset visualization
-5. ResNet50 training and evaluation
-6. DenseNet121 training and evaluation
-7. MobileNetV3Small training and evaluation
-8. Model comparison table
-9. Final conclusion draft
-10. Graph results preview for GitHub
-
-## Expected Results Files
-
-After running the notebook, the `results` folder should contain:
-
-- `model_comparison.csv`
-- `final_conclusion.txt`
+- model comparison table
+- final conclusion text
 - accuracy and loss graphs
 - confusion matrices
 - classification reports
 
-## Model Performance Comparison
+## Model Comparison
 
 | Model | Accuracy | mAP | Training Time | Parameters |
 |---|---:|---:|---:|---:|
@@ -91,24 +84,5 @@ After running the notebook, the `results` folder should contain:
 | DenseNet121 | TBD | TBD | TBD | TBD |
 | MobileNetV3Small | TBD | TBD | TBD | TBD |
 
-The final values will be filled in after running the Colab notebook.
+The final results will be added after the notebook is run in Google Colab.
 
-## Showing Graphs On GitHub
-
-To make the notebook preview show graphs on GitHub:
-
-1. Open the notebook in Google Colab.
-2. Enable GPU runtime.
-3. Run the notebook from top to bottom.
-4. Make sure the final section, **Graph Results Preview For GitHub**, displays the graphs.
-5. In Colab, save the executed notebook back to GitHub:
-
-```text
-File > Save a copy in GitHub
-```
-
-After the saved notebook is pushed to GitHub, the notebook preview will show the graph outputs, confusion matrices, and comparison table.
-
-## Project By
-
-Add group member names here.
