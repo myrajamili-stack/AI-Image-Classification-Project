@@ -30,10 +30,17 @@
 
 ## GitHub Submission
 
-- [ ] Upload notebooks.
+- [x] Upload notebooks.
 - [ ] Upload result graphs.
 - [ ] Upload confusion matrices.
 - [ ] Update README with final results.
 - [ ] Add dataset link if dataset is stored outside GitHub.
 - [ ] Submit GitHub link in VLE.
 
+## Recommended Main Notebook
+
+- [x] Use `notebooks/00_full_cat_breed_project_colab.ipynb` as the main Colab notebook.
+- [ ] Run the full notebook with GPU enabled.
+- [ ] Download or save generated `results` outputs.
+- [ ] Use `results/model_comparison.csv` for the final comparison table.
+- [ ] Use `results/final_conclusion.txt` for the presentation conclusion.

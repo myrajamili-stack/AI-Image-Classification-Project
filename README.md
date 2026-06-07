@@ -74,7 +74,7 @@ notebooks/
   02_resnet50_training.ipynb
   03_densenet121_training.ipynb
   04_mobilenetv3_training.ipynb
-  05_model_comparison.ipynb
+  00_full_cat_breed_project_colab.ipynb
 
 results/
   graphs/
@@ -108,9 +108,26 @@ Separate backup notebooks:
 | `notebooks/02_resnet50_training.ipynb` | [Open](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/02_resnet50_training.ipynb) | Train and evaluate ResNet50 | Ready |
 | `notebooks/03_densenet121_training.ipynb` | [Open](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/03_densenet121_training.ipynb) | Train and evaluate DenseNet121 | Ready |
 | `notebooks/04_mobilenetv3_training.ipynb` | [Open](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/04_mobilenetv3_training.ipynb) | Train and evaluate MobileNetV3 | Ready |
-| `notebooks/05_model_comparison.ipynb` | To be added | Compare all model results and write final conclusion | To do |
+| `notebooks/05_model_comparison.ipynb` | Not needed if using the full notebook | Compare all model results and write final conclusion | Covered in full notebook |
 
 See [docs/colab_guide.md](docs/colab_guide.md) for step-by-step Colab instructions.
+
+## After Running The Full Colab Notebook
+
+After `00_full_cat_breed_project_colab.ipynb` finishes, download or save these output files:
+
+- `results/model_comparison.csv`
+- `results/final_conclusion.txt`
+- `results/graphs/class_distribution.png`
+- `results/graphs/model_comparison.png`
+- `results/graphs/resnet50_accuracy.png`
+- `results/graphs/densenet121_accuracy.png`
+- `results/graphs/mobilenetv3_accuracy.png`
+- `results/confusion_matrices/resnet50_confusion_matrix.png`
+- `results/confusion_matrices/densenet121_confusion_matrix.png`
+- `results/confusion_matrices/mobilenetv3_confusion_matrix.png`
+
+Use these outputs to update the model comparison table below and prepare the 5-minute presentation.
 
 ## Team Roles
 
@@ -130,7 +147,7 @@ See [docs/colab_guide.md](docs/colab_guide.md) for step-by-step Colab instructio
 
 ## Final Conclusion
 
-The final conclusion will choose the best model for the classification task by considering:
+After running the notebook, the final conclusion should choose the best model for the classification task by considering:
 
 - Accuracy
 - mAP
