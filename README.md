@@ -91,7 +91,7 @@ docs/
 | `notebooks/01_data_preparation.ipynb` | Download/filter the Oxford-IIIT Pet Dataset, create train/validation/test splits, and visualize the selected cat breeds | Ready |
 | `notebooks/02_resnet50_training.ipynb` | Train and evaluate ResNet50 | Ready |
 | `notebooks/03_densenet121_training.ipynb` | Train and evaluate DenseNet121 | Ready |
-| `notebooks/04_mobilenetv3_training.ipynb` | Train and evaluate MobileNetV3 | To do |
+| `notebooks/04_mobilenetv3_training.ipynb` | Train and evaluate MobileNetV3 | Ready |
 | `notebooks/05_model_comparison.ipynb` | Compare all model results and write final conclusion | To do |
 
 ## Team Roles
