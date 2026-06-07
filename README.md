@@ -1,11 +1,13 @@
-# AI Image Classification Project
+# Cat Breed Classification Using CNN Transfer Learning
 
 Course: ISB46703 Principle of Artificial Intelligence  
 Assessment: Project, 20%
 
 ## Project Overview
 
-This project compares three convolutional neural network models for an image classification task:
+This project classifies cat breeds using transfer learning with convolutional neural networks. The selected assessment domain is **Animal subspecies**, represented by visually similar domestic cat breeds.
+
+The project compares three convolutional neural network models:
 
 - ResNet50
 - DenseNet121
@@ -13,16 +15,28 @@ This project compares three convolutional neural network models for an image cla
 
 The models will be trained using transfer learning for 50 epochs each. Their performance will be compared using accuracy, mean average precision, training time, model size/parameters, loss and accuracy curves, and confusion matrices.
 
+## Selected Dataset
+
+Dataset source: Oxford-IIIT Pet Dataset  
+Official dataset page: https://www.robots.ox.ac.uk/~vgg/data/pets/
+
+The original dataset contains 37 pet breed categories. This project will use a focused subset of 5 cat breeds so the task remains manageable and fits the assessment requirement of 3 to 10 classes.
+
+Selected classes:
+
+- Abyssinian
+- Bengal
+- Birman
+- Bombay
+- British Shorthair
+
+These classes are suitable because they are all animal breed/subspecies categories and have enough images for transfer learning experiments.
+
 ## Assessment Requirements
 
 The project must include:
 
-- A dataset from one selected domain:
-  - Forestry
-  - Medical imaging
-  - Agriculture health
-  - Animal subspecies
-  - Plant subspecies
+- Selected domain: Animal subspecies.
 - At least 3 image classes, up to 10 classes.
 - Training, validation, and testing dataset splits.
 - Three CNN models trained for 50 epochs each.
@@ -37,8 +51,23 @@ The project must include:
 ```text
 dataset/
   train/
+    Abyssinian/
+    Bengal/
+    Birman/
+    Bombay/
+    British_Shorthair/
   validation/
+    Abyssinian/
+    Bengal/
+    Birman/
+    Bombay/
+    British_Shorthair/
   test/
+    Abyssinian/
+    Bengal/
+    Birman/
+    Bombay/
+    British_Shorthair/
 
 notebooks/
   01_data_preparation.ipynb
@@ -65,7 +94,7 @@ docs/
 
 ## Model Comparison Table
 
-| Model | Accuracy | mAP | Training Time | Parameters | Notes |
+| Model | Test Accuracy | mAP | Training Time | Parameters | Notes |
 |---|---:|---:|---:|---:|---|
 | ResNet50 | TBD | TBD | TBD | TBD | TBD |
 | DenseNet121 | TBD | TBD | TBD | TBD | TBD |
@@ -82,3 +111,12 @@ The final conclusion will choose the best model for the classification task by c
 - Confusion matrix performance
 - Overall suitability for the selected dataset
 
+## Presentation Focus
+
+The 5-minute presentation should explain:
+
+1. Why cat breed classification fits the Animal subspecies domain.
+2. How the dataset was prepared and split.
+3. How transfer learning was used with ResNet50, DenseNet121, and MobileNetV3.
+4. The accuracy, mAP, training time, and confusion matrix results.
+5. Which model is the best choice and why.
