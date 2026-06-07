@@ -1,15 +1,14 @@
-# Cat Breed Classification
-
-## Project Members
-
-1. Myra Jasmeen Daniella Binti Bakar Jamili
-2. Muhammad Bin Iskandar
+# Cat Breed Images Classification with Convolutional Neural Networks (CNN)
 
 ## Description
 
-This project is an image classification project for the **Principle of Artificial Intelligence** course. The selected domain is **Animal subspecies**, focusing on cat breed classification using the Oxford-IIIT Pet Dataset.
+This repository contains a comprehensive analysis of cat breed classification using various convolutional neural network (CNN) models. It is part of the project for the Principles of Artificial Intelligence subject, focusing on model performance evaluation and improvement strategies. Detailed analysis of confusion matrices, training accuracy, and loss trends are included to provide comprehensive insights.
 
-The project uses Convolutional Neural Network transfer learning to classify five cat breeds:
+## Overview
+
+Cat breed classification is a challenging task due to the subtle visual differences between breeds. This project employs three popular neural network architectures, ResNet50, DenseNet121, and MobileNetV3Small, to tackle this classification problem. The goal is to analyze their performance, identify areas for improvement, and suggest enhancements.
+
+The selected domain for this project is **Animal subspecies**. The dataset used is the Oxford-IIIT Pet Dataset, filtered into five cat breed classes:
 
 - Abyssinian
 - Bengal
@@ -17,72 +16,46 @@ The project uses Convolutional Neural Network transfer learning to classify five
 - Bombay
 - British Shorthair
 
-Three pretrained CNN models are used and compared:
+## Contents
 
-- ResNet50
-- DenseNet121
-- MobileNetV3Small
+### Attached Files
 
-The goal is to identify which model performs best based on accuracy, mean average precision, training time, model parameters, loss/accuracy graphs, and confusion matrices.
+`00_full_cat_breed_project_colab.ipynb`: Python notebook consisting of the full project implementation, including dataset downloading, dataset preparation, model training, model evaluation, graph visualization, confusion matrix analysis, and final model comparison.
 
-## Overview
+### Confusion Matrix Analysis
 
-The complete workflow is included in one Google Colab notebook:
+Provides a visual summary of the three models. Highlights key metrics, such as correct classifications and misclassifications. Offers detailed insights into error patterns and potential biases in the model.
 
-[Open Notebook in Colab](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/00_full_cat_breed_project_colab.ipynb)
+### Model Performance Comparison
 
-The notebook performs the following steps:
+Compares accuracy, mean average precision (mAP), and training times across the three models. Identifies the best performing model based on these metrics.
 
-1. Downloads the Oxford-IIIT Pet Dataset.
-2. Filters the dataset to the selected five cat breeds.
-3. Splits the dataset into training, validation, and testing sets.
-4. Visualizes the dataset distribution and sample cat images.
-5. Trains ResNet50 for 50 epochs.
-6. Trains DenseNet121 for 50 epochs.
-7. Trains MobileNetV3Small for 50 epochs.
-8. Evaluates each model using accuracy and mAP.
-9. Displays accuracy/loss graphs and confusion matrices.
-10. Compares the three models and generates a final conclusion.
+### Training Accuracy and Loss Trends
 
-Before running the notebook in Colab, enable GPU:
+Examines the evolution of training and validation accuracy. Analyzes training and validation loss to understand overfitting or underfitting trends.
+
+## Performance Metrics
+
+The final performance metrics will be updated after running the notebook in Google Colab.
+
+ResNet50: Accuracy - TBD, mAP - TBD, Training Time - TBD.  
+DenseNet121: Accuracy - TBD, mAP - TBD, Training Time - TBD.  
+MobileNetV3Small: Accuracy - TBD, mAP - TBD, Training Time - TBD.
+
+## Google Colab Notebook
+
+Open the full project notebook in Google Colab:
+
+[Open in Colab](https://colab.research.google.com/github/myrajamili-stack/AI-Image-Classification-Project/blob/main/notebooks/00_full_cat_breed_project_colab.ipynb)
+
+Before running the notebook, enable GPU:
 
 ```text
 Runtime > Change runtime type > Hardware accelerator > GPU
 ```
 
-## Contents
+## Project By
 
-```text
-notebooks/
-  00_full_cat_breed_project_colab.ipynb
-
-results/
-  README.md
-
-README.md
-```
-
-### notebooks
-
-Contains the main all-in-one Google Colab notebook for dataset preparation, model training, evaluation, and result visualization.
-
-### results
-
-Stores output files generated after running the notebook, such as:
-
-- model comparison table
-- final conclusion text
-- accuracy and loss graphs
-- confusion matrices
-- classification reports
-
-## Model Comparison
-
-| Model | Accuracy | mAP | Training Time | Parameters |
-|---|---:|---:|---:|---:|
-| ResNet50 | TBD | TBD | TBD | TBD |
-| DenseNet121 | TBD | TBD | TBD | TBD |
-| MobileNetV3Small | TBD | TBD | TBD | TBD |
-
-The final results will be added after the notebook is run in Google Colab.
+Myra Jasmeen Daniella Binti Bakar Jamili  
+Muhammad Bin Iskandar
 
