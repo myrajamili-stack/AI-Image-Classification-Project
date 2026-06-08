@@ -2,13 +2,13 @@
 
 ## Description
 
-This repository contains a comprehensive analysis of cat breed classification using various convolutional neural network (CNN) models. It is part of the project for the Principles of Artificial Intelligence subject, focusing on model performance evaluation and improvement strategies. Detailed analysis of confusion matrices, training accuracy, and loss trends are included to provide comprehensive insights.
+This repository contains a comprehensive analysis of cat breed classification using various convolutional neural network (CNN) models. It is part of the project for the Principles of Artificial Intelligence subject, focusing on dataset preparation, web-crawled image collection, model performance evaluation, and improvement strategies. Detailed analysis of confusion matrices, training accuracy, and loss trends are included to provide comprehensive insights.
 
 ## Overview
 
 Cat breed classification is a challenging task due to the subtle visual differences between breeds. This project employs three popular neural network architectures, ResNet50, DenseNet121, and MobileNetV3Small, to tackle this classification problem. The goal is to analyze their performance, identify areas for improvement, and suggest enhancements.
 
-The selected domain for this project is **Animal subspecies**. The dataset used is the Oxford-IIIT Pet Dataset, filtered into five cat breed classes:
+The selected domain for this project is **Animal subspecies**. The dataset is collected using a web crawler tool in Google Colab. The target dataset size is **10,000 images**, with **2,000 images per class** across five cat breed classes:
 
 - Abyssinian
 - Bengal
@@ -21,6 +21,20 @@ The selected domain for this project is **Animal subspecies**. The dataset used 
 ### Attached Files
 
 `00_full_cat_breed_project_colab.ipynb`: Python notebook consisting of the full project implementation, including dataset downloading, dataset preparation, model training, model evaluation, graph visualization, confusion matrix analysis, and final model comparison.
+
+The notebook creates a Google Drive project folder:
+
+```text
+MyDrive/AI-Image-Classification-Project/
+```
+
+Inside the project folder, the dataset is split into:
+
+```text
+dataset/train/
+dataset/validation/
+dataset/test/
+```
 
 ### Confusion Matrix Analysis
 
